@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rambla&display=swap');
 
 * {
     margin: 0%;
@@ -102,4 +102,109 @@ a {
 .underline_hover:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+/* content style */
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-left: 7em;
+    margin-top: 2em;
+    grid-template-areas: 
+    "programming"
+    "ui_ux"
+    "graphic_design";
+}
+/* programming style */
+.programming {
+    grid-area: programming;
+    text-align: center;
+    width: 85vw;
+    height: 38vw;
+    /* background-color: red;  */
+}
+/* header style */
+h2 {
+    font-size: 2em;
+    color: var(--nav_text_color);
+}
+/* programming projects container style */
+.programming_projects_container {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+/* first programming project style */
+.pp {
+    display: flex;
+    flex-direction: column;
+    color: var(--body_color);
+    background-color: var(--text_and_button_color);
+    height: 30vh;
+    width: 24vw;
+    border-radius: 20px;
+    justify-content: center;
+}
+/* text style */
+h4 {
+    font-size: 1.7em;
+    font-weight: lighter;
+}
+p {
+    font-size: 1.2em;
+}
+/* button container style */
+.button {
+    margin-top: 1em;
+}
+/* button style */
+button {
+    border-radius: 15px;
+    padding: 2%;
+    width: 9em;
+    height: 2.5em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    background-color: #FF6701;
+    color: #FFF7EF;
+}
+
+.ui_ux {
+    grid-area: ui_ux;
+    text-align: center;
+    padding-top: 1em;
+    width: 85vw;
+    height: 38vw;
+    /* background-color: blue; */
+}
+/* UI/UX projects container style */
+.ui_ux_projects_container {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+.graphic_design {
+    grid-area: graphic_design;
+    text-align: center;
+    padding-top: 2em;
+    width: 85vw;
+    height: 28vw;
+    /* background-color: blueviolet; */
+}
+/* graphic design projects container style */
+.graphic_design_projects_container {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
 }
