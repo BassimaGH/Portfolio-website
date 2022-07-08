@@ -174,8 +174,19 @@ button {
     border: none;
     background-color: #FF6701;
     color: #FFF7EF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* button hover animation */
+button:hover {  
+    animation: button_hover 0.2s ease-in 0s 1 normal both;
+}
+@keyframes button_hover {
+    100% {
+        background-color: #d15502;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 
+}
 .ui_ux {
     grid-area: ui_ux;
     text-align: center;
