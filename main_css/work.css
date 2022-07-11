@@ -112,8 +112,9 @@ a {
     grid-auto-flow: row;
     justify-content: space-evenly;
     align-content: space-evenly;
-    margin-left: 7em;
-    margin-top: 2em;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
     grid-template-areas: 
     "programming"
     "ui_ux"
@@ -123,18 +124,15 @@ a {
 .programming {
     grid-area: programming;
     text-align: center;
-    width: 85vw;
-    height: 38vw;
-    /* background-color: red;  */
 }
 /* header style */
 h2 {
-    font-size: 2em;
+    font-size: 2vw;
     color: var(--nav_text_color);
 }
 /* programming projects container style */
 .programming_projects_container {
-    margin-top: 2.3em;
+    margin-top: 2.3vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -153,23 +151,24 @@ h2 {
 }
 /* text style */
 h4 {
-    font-size: 1.7em;
+    font-size: 1.7vw;
     font-weight: lighter;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.2vw;
+    opacity: 0.9;
 }
 /* button container style */
 .button {
-    margin-top: 1em;
+    margin-top: 1vw;
 }
 /* button style */
 button {
     border-radius: 15px;
     padding: 2%;
-    width: 9em;
-    height: 2.5em;
-    font-size: 1em;
+    width: 9vw;
+    height: 2.5vw;
+    font-size: 1vw;
     outline: none;
     border: none;
     background-color: #FF6701;
@@ -190,14 +189,11 @@ button:hover {
 .ui_ux {
     grid-area: ui_ux;
     text-align: center;
-    padding-top: 1em;
-    width: 85vw;
-    height: 38vw;
-    /* background-color: blue; */
+    padding-top: 1vw;
 }
 /* UI/UX projects container style */
 .ui_ux_projects_container {
-    margin-top: 2.3em;
+    margin-top: 2.3vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -206,16 +202,23 @@ button:hover {
 .graphic_design {
     grid-area: graphic_design;
     text-align: center;
-    padding-top: 2em;
-    width: 85vw;
-    height: 28vw;
-    /* background-color: blueviolet; */
+    padding-top: 2vw;
 }
 /* graphic design projects container style */
 .graphic_design_projects_container {
-    margin-top: 2.3em;
+    margin-top: 2.3vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1vw;
+}
+
+@media screen and (max-width: 880px) {
+    /* text style */
+h4 {
+    font-size: 2.4vw;
+}
+p {
+    font-size: 1.7vw;
+}
 }
