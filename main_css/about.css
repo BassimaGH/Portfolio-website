@@ -13,12 +13,12 @@
 :root {
     --body_color: #FFF7EF;
     --nav_text_color: #121212;
-    --text_and_button_color: #35576E;
+    --text_and_button_color: #1A3545;
     --button_hover_color: #0C4A74;
 }
 /* dark mode page colors */
 .dark_mode {
-    --body_color: #35576E;
+    --body_color: #1A3545;
     --nav_text_color: #FFF7EF;
     --text_and_button_color: #FFF7EF;
     --button_hover_color: #ffffff;
