@@ -81,10 +81,7 @@ a {
     cursor: pointer;
     fill: var(--nav_text_color);
 }
-/* sun icon */
-.sun_icon {
-    display: none;
-}
+
 /* nav hover style */
 .underline_hover {
     display: inline-block;
@@ -113,32 +110,22 @@ a {
 /* content style */
 .content {
     grid-area: content;
+    text-align: center;
 }
 /* first flex container style */
 .flex_container_1 {
     display: flex;
+    text-align: center;
     flex-direction: column;
     margin: 4vw 9vw;
     gap: 2vw;
 }
-/* main header flex container style*/
-.main_header {
-    display: flex;
-    flex-direction: row;
-    font-size: 2.8vw;
-    gap: 0.8vw;
+/* name style */
+#name {
+    font-family: 'Rambla', sans-serif;
+    font-weight: 400;
     color: var(--text_and_button_color);
-}
-/* "bassima" color*/
-#first_name {
-    color: #FF6701;
-    font-family: 'Rambla', sans-serif;
-    font-weight: lighter;
-}
-/* last name style */
-#last_name {
-    font-family: 'Rambla', sans-serif;
-    font-weight: lighter;
+    font-size: 3.8vw;
 }
 /* sub header style */
 .sub_header {
@@ -146,7 +133,8 @@ a {
     font-size: 2vw;
 }
 h3 {
-    font-weight: lighter;
+    font-weight: 50;
+    font-size: 2vw;
 }
 /* button style */
 button {
@@ -155,8 +143,8 @@ button {
     border-radius: 10px;
     outline: none;
     border: none;
-    background-color: var(--text_and_button_color);
-    color: var(--body_color);
+    background-color: #FF6701;
+    color: #ffffff;
     font-size: 1.7vw;
     cursor: pointer;
 }
@@ -171,60 +159,27 @@ button:hover {
     }
 
 }
-/* rectangels container style */
-.all_rec_container {
-    position: absolute;
-    top: 50vh;
-    left: 70vw;
-}
-/* rectangle 1 style */
-.rec_1 {
-    width: 35vw;
-    height: 35vw;
 
-    background: var(--text_and_button_color);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 61px;
-    transform: rotate(55.57deg);
-    padding: 3vw;
-}
-/* rectangle 1 hover style */
-.rec_1:hover {
-    animation: rec_1_hover 0.7s ease-in 0s infinite normal both;
-}
-@keyframes rec_1_hover {
-    0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	}
-	50% {
-		box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	}
-}
-/* rectangle 2 style */
-.rec_2 {
-    width: 35vw;
-    height: 35vw;
-
-    background: #FF6701;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 61px;
-    transform: rotate(90deg);
-}
-/* rectangle 2 hover style */
-.rec_2:hover {
-    animation: rec_2_hover 0.7s ease-in 0s infinite normal both;
-}
-@keyframes rec_2_hover {
-    0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	}
-	50% {
-		box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	}
+@media screen and (max-width: 1080px) {
+    /* Nav style */
+    #logo_svg {
+        width: 5.6vw;
+        height: 5.6vw;
+    }
+    .logo {
+        margin-right: 44vw;
+    }
+    ul li {
+        font-size: 2.7vw;
+    }
+    /* moon icon */
+    #moon_svg {
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+    /* main text */
+    p {
+        font-size: 3.5vw;
+        padding-bottom: 9vw;
+    }
 }

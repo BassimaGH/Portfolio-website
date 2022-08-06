@@ -78,10 +78,7 @@ a {
     cursor: pointer;
     fill: var(--nav_text_color);
 }
-/* sun icon */
-.sun_icon {
-    display: none;
-}
+
 /* nav hover style */
 .underline_hover {
     display: inline-block;
@@ -167,4 +164,43 @@ p {
 .circle_icons {
     width: 3.5vw;
     height: 3.5vw;
+}
+
+@media screen and (max-width: 1080px) {
+    /* Nav style */
+    #logo_svg {
+        width: 5.6vw;
+        height: 5.6vw;
+    }
+    .logo {
+        margin-right: 44vw;
+    }
+    ul li {
+        font-size: 2.7vw;
+    }
+    /* moon icon */
+    #moon_svg {
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+    /* content style */
+    .content {
+        margin: 13vw 9vw;
+    }
+    /* main text */
+    p {
+        font-size: 3.5vw;
+        padding-bottom: 9vw;
+    }
+    /* circle style */
+    .circle_obj {
+        width: 15vw;
+        height: 15vw;
+        padding-top: 4.5vw;
+    }
+    /* circle icons */
+    .circle_icons {
+        width: 5vw;
+        height: 5vw;
+    }
 }
