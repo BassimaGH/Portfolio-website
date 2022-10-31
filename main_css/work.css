@@ -13,6 +13,8 @@
     --body_color: #FFF7EF;
     --nav_text_color: #121212;
     --text_and_button_color: #1A3545;
+    --container_color: #1A3545;
+    --container_text_color: #FFF7EF;
     --button_hover_color: #0C4A74;
 }
 /* dark mode page colors */
@@ -20,6 +22,8 @@
     --body_color: #1A3545;
     --nav_text_color: #FFF7EF;
     --text_and_button_color: #FFF7EF;
+    --container_color: #0c1920;
+    --container_text_color: #FFF7EF;
     --button_hover_color: #ffffff;
 }
 /* body style */
@@ -140,8 +144,8 @@ h2 {
 .pp {
     display: flex;
     flex-direction: column;
-    color: var(--body_color);
-    background-color: var(--text_and_button_color);
+    color: var(--container_text_color);
+    background-color: var(--container_color);
     height: 30vh;
     width: 24vw;
     border-radius: 20px;
