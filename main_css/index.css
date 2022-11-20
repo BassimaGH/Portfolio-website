@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@300&display=swap');
 
 * {
     margin: 0%;
@@ -17,7 +18,7 @@
 }
 /* dark mode page colors */
 .dark_mode {
-    --body_color: #1A3545;
+    --body_color: #152a37;
     --nav_text_color: #FFF7EF;
     --text_and_button_color: #FFF7EF;
     --button_hover_color: #ffffff;
@@ -124,10 +125,10 @@ a {
 }
 /* name style */
 #name {
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-weight: 400;
     color: var(--text_and_button_color);
-    font-size: 3vw;
+    font-size: 6rem;
 }
 /* sub header style */
 .sub_header {
@@ -184,7 +185,7 @@ button:hover {
     }
     /* main text */
     #name {
-        font-size: 4vw;
+        font-size: 7vw;
     }
     h3 {
         font-size: 2.7vw;
@@ -203,15 +204,15 @@ button:hover {
     }
     /* main text */
     #name {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     h3 {
         font-size: 3.7vw;
     }
     /* button style */
     button {
-        width: 40vw;
-        height: 10vw;
+        width: 35vw;
+        height: 7vw;
         font-size: 3.5vw;
     }
 }
