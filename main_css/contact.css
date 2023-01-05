@@ -167,6 +167,11 @@ p {
     height: 3.5vw;
 }
 
+.circle_icons_2 {
+    width: 4vw;
+    height: 4vw;
+}
+
 @media screen and (max-width: 1080px) {
     /* Nav style */
     #logo_svg {
@@ -203,5 +208,10 @@ p {
     .circle_icons {
         width: 5vw;
         height: 5vw;
+    }
+
+    .circle_icons_2 {
+        width: 6vw;
+        height: 6vw;
     }
 }
